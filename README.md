@@ -1,5 +1,5 @@
 # asctris.nvim
-![Asctris Demo](/assets/asctris_demo_high_def.gif)
+![Asctris Demo](/assets/asctris_demo_high_def.gif){ .image75percent}
 
 ## Requirements
 * Neovim >= 0.9.0  
