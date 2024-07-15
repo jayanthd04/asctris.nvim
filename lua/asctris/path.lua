@@ -18,7 +18,7 @@ M.exec_file_exists = function ()
     -- print(plugin_path)
     --local exec_file = vim.api.nvim_get_runtime_file(plugin_path .. "/source/tetrisNvim.*",false)
     -- local exec_file = vim.api.nvim_get_runtime_file("source/asctrisExec.*",false)
-    local exec_file = vim.api.nvim_get_runtime_file("source/asctrisExec",false)
+    local exec_file = vim.api.nvim_get_runtime_file("source/asctrisExec*",false)
     -- print(exec_file[1])
     -- searching when files are added properly to nvim rtp 
     -- local exec_file = vim.api.nvim_get_runtime_file(plugin_path .. "/tetrisNvim.*",false)
