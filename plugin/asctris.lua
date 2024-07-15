@@ -23,4 +23,8 @@ local function asctris_dispatcher(args)
         print("Function ".. func_name .. " is invalid for Asctris")
     end 
 end 
-vim.api.nvim_create_user_command('Asctris',asctris_dispatcher,{nargs = 1})
+vim.api.nvim_create_user_command('Asctris',asctris_dispatcher,{nargs = 1,
+    complete = function(ArgLead,CmdLine, CursorPos)
+        return {"run_game"}
+    end,
+})
