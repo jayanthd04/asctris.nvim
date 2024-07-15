@@ -1,5 +1,5 @@
 # asctris.nvim
-[//]: # (![Asctris Demo](/assets/asctris_demo_high_def.gif =1152x648)
+![Asctris Demo](/assets/asctris_demo_high_def.gif)
 <img src="/assests/asctris_demo_high_def.gif" width = "1152" height= "648">
 ## Requirements
 * Neovim >= 0.9.0  
