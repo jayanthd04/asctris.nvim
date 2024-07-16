@@ -10,3 +10,27 @@ Asctris is a port of the popular arcade game Tetris that is rendered purely usin
 
 ## Installation
 
+Using vim-plug
+
+```viml
+Plug 'jayanthd04/asctris.nvim'
+```
+
+Using packer.nvim 
+
+```lua
+use 'jayanthd04/asctris.nvim'
+```
+
+Using lazy.nvim
+
+```lua
+'jayanthd04/asctris.nvim'
+```
+
+## Usage
+Run the command `:Asctris run_game` to launch a new game of Asctris. 
+### Controls 
+* Press the left or right arrows to move blocks to the left or right respectively. 
+* Press the down arrow key to make the block fall down faster. 
+* Press the up arrow key to rotate the block 90 degrees clockwise.  
