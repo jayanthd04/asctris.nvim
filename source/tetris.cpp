@@ -526,7 +526,7 @@ int main(){
                 }*/
                 //if(timeSince>16) continue; 
                 //lastProc = currTime; 
-                if(key==KEY_UP || key== 'k'){
+                if(key==KEY_UP){
                     pair<vector<vector<char>>, vector<int>> next = tet; 
                     tetris.rotateTetrim(next); 
                     if(!tetris.collision(next,x,y+next.second[0])){
@@ -534,19 +534,19 @@ int main(){
                         moved = true; 
                     }
                 }
-                else if(key == KEY_LEFT || key == 'h'){
+                else if(key == KEY_LEFT){
                     if(!tetris.collisionLeft(tet,x,y+tet.second[0])){
                         x--; 
                         moved = true; 
                     }
                 }
-                else if(key == KEY_RIGHT || key == 'l'){
+                else if(key == KEY_RIGHT){
                     if(!tetris.collisionRight(tet,x,y+tet.second[0])){
                         x++;
                         moved = true; 
                     }
                 }
-                else if(key == KEY_DOWN || key == 'j'){
+                else if(key == KEY_DOWN){
                     if(!tetris.collisionVert(tet,x,y+tet.second[0])){
                         y++;
                         moved = true; 
