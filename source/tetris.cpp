@@ -21,7 +21,7 @@
 #include <chrono>
 using namespace std; 
 
-// game board is 10 cells wide by 16 cells height 
+// game board is 10 cells wide by 16 cells height
 class Tetris{
     // game logic: 
     // get random tetrimino 
@@ -166,7 +166,7 @@ class Tetris{
             }
         }
         pair<vector<vector<char>>, vector<int>> getRandomTetrim(){
-            srand(static_cast<unsigned int>(time(0)));
+            //srand(static_cast<unsigned int>(time(0)));
             int i = rand() % 7;
             return tetrim[i];
         }
@@ -467,6 +467,7 @@ int main(){
 
 
     //nodelay(gameWin,true);
+    srand(chrono::high_resolution_clock::now().time_since_epoch().count());
     Tetris tetris;
     mutex mtx; 
     mutex windowMtx; 
@@ -525,7 +526,7 @@ int main(){
                 }*/
                 //if(timeSince>16) continue; 
                 //lastProc = currTime; 
-                if(key==KEY_UP){
+                if(key==KEY_UP || key== 'k'){
                     pair<vector<vector<char>>, vector<int>> next = tet; 
                     tetris.rotateTetrim(next); 
                     if(!tetris.collision(next,x,y+next.second[0])){
@@ -533,19 +534,19 @@ int main(){
                         moved = true; 
                     }
                 }
-                else if(key == KEY_LEFT){
+                else if(key == KEY_LEFT || key == 'h'){
                     if(!tetris.collisionLeft(tet,x,y+tet.second[0])){
                         x--; 
                         moved = true; 
                     }
                 }
-                else if(key == KEY_RIGHT){
+                else if(key == KEY_RIGHT || key == 'l'){
                     if(!tetris.collisionRight(tet,x,y+tet.second[0])){
                         x++;
                         moved = true; 
                     }
                 }
-                else if(key == KEY_DOWN){
+                else if(key == KEY_DOWN || key == 'j'){
                     if(!tetris.collisionVert(tet,x,y+tet.second[0])){
                         y++;
                         moved = true; 
