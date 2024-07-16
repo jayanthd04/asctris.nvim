@@ -28,6 +28,7 @@ Using lazy.nvim
 'jayanthd04/asctris.nvim'
 ```
 
+After installation, you can continue to read on further on how to use Asctris here or you can run the command `:help asctris` at anytime right from Neovim to learn about how to use asctris.nvim. 
 ## Usage
 Run the command `:Asctris run_game` to launch a new game of Asctris. 
 ### Controls 
