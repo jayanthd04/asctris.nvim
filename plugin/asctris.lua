@@ -3,9 +3,9 @@ local path = require("asctris.path")
 local plugin_path = path.plugin_dir()
 -- try to compile with -lncursesw
 local function compileFile()
-    local windowsCompile = os.execute("g++ ".. plugin_path .."/source/tetris.cpp -lncursesw -o ".. plugin_path .. "/source/asctrisExec")
+    local windowsCompile = os.execute("g++ ".. plugin_path .."/source/tetris.cpp -lncursesw -std=c++11 -o ".. plugin_path .. "/source/asctrisExec")
     if windowsCompile ~= 0 then 
-        local linuxCompile = os.execute("g++ ".. plugin_path .."/source/tetris.cpp -lncurses -o ".. plugin_path .. "/source/asctrisExec")
+        local linuxCompile = os.execute("g++ ".. plugin_path .."/source/tetris.cpp -lncurses -std=c++11 -o ".. plugin_path .. "/source/asctrisExec")
         if linuxCompile ~= 0 then
             error("Cannot compile file")
         end 
