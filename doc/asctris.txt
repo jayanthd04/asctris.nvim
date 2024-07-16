@@ -1,0 +1,12 @@
+================================================================================
+INTRODUCTION                   *asctris.nvim*
+
+Asctris.nvim brings the popular arcade game Tetris to the best text/code-editor, all rendered in simple yet beautiful ASCII characters. 
+
+Getting started with asctris: 
+* Run `:Asctris run_game` to start a new game of Asctris. 
+* The game is controlled using the arrow keys 
+    - Press the left arrow key to move blocks to the left
+    - Press the right arrow key to move blocks to the right 
+    - Press the down arrow key to make blocks fall down faster 
+    - Press the up arrow key to rotate blocks 90 degrees clockwise 
