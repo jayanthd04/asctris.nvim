@@ -90,6 +90,9 @@ class Tetris{
         };
 
     public: 
+        Tetris(){
+            srand(chrono::high_resolution_clock::now().time_since_epoch().count());
+        }
         vector<vector<char>> getState(){
             return board;
         }
@@ -467,7 +470,7 @@ int main(){
 
 
     //nodelay(gameWin,true);
-    srand(chrono::high_resolution_clock::now().time_since_epoch().count());
+    // srand(chrono::high_resolution_clock::now().time_since_epoch().count());
     Tetris tetris;
     mutex mtx; 
     mutex windowMtx; 

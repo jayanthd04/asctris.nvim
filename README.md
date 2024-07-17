@@ -35,3 +35,4 @@ Run the command `:Asctris run_game` to launch a new game of Asctris.
 * Press the left or right arrows to move blocks to the left or right respectively. 
 * Press the down arrow key to make the block fall down faster. 
 * Press the up arrow key to rotate the block 90 degrees clockwise.  
+* You can exit the game whenever you want by simply pressing `Ctrl+c`
