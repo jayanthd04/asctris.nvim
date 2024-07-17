@@ -10,3 +10,4 @@ Getting started with asctris:
     - Press the right arrow key to move blocks to the right 
     - Press the down arrow key to make blocks fall down faster 
     - Press the up arrow key to rotate blocks 90 degrees clockwise 
+    - You can exit the game whenever you want by simply pressing `Ctrl+c`
